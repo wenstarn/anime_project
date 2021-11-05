@@ -1,0 +1,67 @@
+.lay {
+    position: fixed;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    width: 100% ;
+    height: 100% ;
+    
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    z-index: 1000;
+}
+
+.search-list {
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    width: 25% ;
+    height: 100% ;
+    overflow: hidden;
+    
+    opacity: 1;
+}
+
+.search-item {
+    background-color: white;
+    opacity: 1;
+    border-radius: 10% / 30%;
+}
+
+.outer-container {
+    position: relative;
+    overflow: hidden;
+}
+.scroll {
+    padding: 0;
+    width: 100%;
+    height:50vh; /* высота нашего блока */
+    
+    overflow-y: auto
+    }
+
+.element, .outer-container {
+    width: 200px;
+    height: 200px;
+    }
+
+.outer-container {
+    border: 5px solid purple;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-container {
+    position: absolute;
+    left: 0;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    }
+
+.inner-container::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,26 @@
+.anime-image {
+    height: 313.5px;
+    width: 95%;
+}
+
+.anime-item {
+    min-height: 418px;
+    width: 225px;
+    text-align: center;
+    margin-bottom: 2em;
+    
+    
+}
+.anime-field {
+    height: 418px;
+    width: 250px;
+}
+.anime-image {
+    transition: 0.5s;
+    border-radius: 5%;
+}
+
+footer{
+    margin-top: 0.5em;
+}
+
