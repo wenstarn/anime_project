@@ -4,7 +4,9 @@ import AnimeList from '../anime-list'
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import AnimeDetails from '../anime-details';
 import AnimeSearchList from '../anime-search-list';
+import MyList from '../my-list';
 import './app.css'
+
 
 const App = () => {
     return (
@@ -23,10 +25,11 @@ const App = () => {
                 <Route path="/animes" component={AnimeList} exact />
 
                 <Route path="/animes/:id" render={({ match }) => {
-                    console.log("shiiiiift")
                     const { id } = match.params;
                     return <AnimeDetails id={id} />
                 }} exact />
+
+                <Route path="/myList" component={MyList} exact />
 
             </Switch>
         </main >

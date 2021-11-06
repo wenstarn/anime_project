@@ -77,3 +77,16 @@ export const typeAnimeSearch = (search) => {
     }
 }
 
+export const removeFromMyList = (anime) => {
+    return {
+        type: 'REMOVE_FROM_MY_LIST',
+        payload: anime
+    }
+}
+
+export const addToMyList = (anime) => {
+    return {
+        type: 'ADD_TO_MY_LIST',
+        payload: anime
+    }
+}

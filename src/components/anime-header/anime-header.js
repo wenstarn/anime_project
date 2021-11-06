@@ -25,7 +25,7 @@ const AnimeHeader = ({ animeService, animeSearchListRequested, animeSearchListLo
                         <Link className="nav-link" to="/animes">Ongoings<span class="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link disabled" href="#">My list</Link>
+                        <Link className="nav-link" to="/myList">My list</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link disabled" href="#">Games</Link>
@@ -67,7 +67,6 @@ const searchClick = (visible) => (event) => {
     const nav = document.querySelector('nav');
     const searchList = document.querySelector('.search-list');
 
-    document.querySelector('.lay').style.visibility = "visible"
     visible();
     searchList.style.width = window.getComputedStyle(form).getPropertyValue("width")
     searchList.style.top = window.getComputedStyle(nav).getPropertyValue("height")
@@ -82,14 +81,11 @@ window.addEventListener(`resize`, event => {
     const nav = document.querySelector('nav');
     const toggle = document.querySelector('.navbar-toggler');
     if (window.getComputedStyle(toggle).getPropertyValue("display") != 'none' && shift === false) {
-        document.querySelector('.lay').style.visibility = "hidden"
         store.dispatch(makeListInvisible())
         shift = true;
     }
 
     if (window.getComputedStyle(toggle).getPropertyValue("display") != 'block' && shift === true) {
-        document.querySelector('.lay').style.visibility = "hidden"
-        //makeListInvisible()
         store.dispatch(makeListInvisible())
         shift = false;
     }

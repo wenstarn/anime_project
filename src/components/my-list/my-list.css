@@ -1,0 +1,23 @@
+h1 {
+    font-size: 1.8em;
+}
+
+.index {
+    width: 10%;
+
+}
+
+.name {
+    width: 50%;
+}
+
+.episodes {
+    width: 20%;
+    text-align: center;
+    
+}
+
+.grade {
+    width: 20%;
+    text-align: center;
+}

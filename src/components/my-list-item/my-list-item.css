@@ -1,0 +1,32 @@
+.my-list-item-stats {
+    width: 30%;
+    background-color: #212529;
+    border: none;
+    color: white;
+    text-align: center;
+    
+}
+
+.my-list-item-stats:hover {
+    border: 0.1rem solid white;
+    border-radius: 20% / 50%;
+
+}
+
+.my-list-item-stats:focus {
+    border: 0.1rem solid white;
+    border-radius: 20% / 50%;
+
+}
+
+@media (max-width: 650px) {
+    .my-list-item-stats {
+        width: 100%;
+    }
+    
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+}
