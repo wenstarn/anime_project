@@ -15,8 +15,6 @@ const updateAnimeList = (state, action) => {
                 loading: true,
                 error: null,
                 page: 1
-
-
             }
         case 'FETCH_ANIME_LIST_SUCCESS':
             return {

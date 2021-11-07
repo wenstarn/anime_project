@@ -30,7 +30,7 @@ const updateAnimeSearchList = (state, action) => {
                 animes: [],
                 loading: false,
                 error: action.payload
-            };
+            }
         case 'CLEAR_ANIME_SEARCH_LIST':
             return {
                 ...state.animeSearchList,

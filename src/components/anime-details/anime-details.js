@@ -124,9 +124,7 @@ const selectCategory = (state, animeServ) => (event) => {
 const pushButton = (number, state, animeServ) => (event) => {
     let { category, episodes, grade } = state;
     const { removeAnime, addAnime, anime } = animeServ;
-    console.log("im add")
     let episodesNum = episodes + number;
-    console.log(episodesNum)
     const episodesLimit = anime.episodes > 0 ? anime.episodes : anime.episodes_aired;
     removeAnime(anime)
     if (episodesNum < 0) episodesNum = 0
